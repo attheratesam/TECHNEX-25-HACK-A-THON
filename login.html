@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Campus Connect - Login</title>
+  <link rel="stylesheet" href="styles/login.css">
+</head>
+<body>
+  <!-- Background -->
+  <div class="background"></div>
+
+  <!-- Main container -->
+  <div class="container">
+    <div class="card animate">
+      <h1>Campus Connect</h1>
+      <p class="quote">"Your gateway to campus events, discussions, and connections."</p>
+      <form id="loginForm">
+        <input type="text" id="name" placeholder="Full Name" required>
+        <input type="email" id="gmail" placeholder="Gmail" required>
+        <input type="password" id="password" placeholder="Password" required>
+        <input type="text" id="college" placeholder="College Name" required>
+        <input type="text" id="phone" placeholder="10-Digit Phone Number" pattern="\d{10}" required>
+        <button type="submit">Login</button>
+        <div class="error" id="errorMessage"></div>
+      </form>
+    </div>
+  </div>
+
+  <script src="scripts/login.js"></script>
+</body>
+</html>
